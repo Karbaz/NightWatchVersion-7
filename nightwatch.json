@@ -1,57 +1,57 @@
 {
-    "test_workers": {
-      "enabled": true,
-      "workers": 10
-    },
-    "src_folders": ["test"],
-    "output_folder": "reports/XMLReports",
-    "globals_path":"",
-    "custom_commands_path": "",
-    "custom_assertions_path": "", 
-    "page_objects_path": "pages",
-    "selenium": {
-      "start_process": true,
-      "server_path": "bin/selenium-server-standalone-3.14.0.jar",
-      "start_session": true,
-      "log_path": "log/",
-      "host": "127.0.0.1",
-      "port": 5678,
-      "cli_args": {
-        "webdriver.chrome.driver": "bin/chromedriver"
+  "test_workers": {
+    "enabled": true,
+    "workers": 10
+  },
+  "src_folders": ["test"],
+  "output_folder": "reports/XMLReports",
+  "globals_path": "globals_path.js",
+  "custom_commands_path": "",
+  "custom_assertions_path": "",
+  "page_objects_path": "pages",
+  "selenium": {
+    "start_process": true,
+    "server_path": "bin/selenium-server-standalone-3.14.0.jar",
+    "start_session": true,
+    "log_path": "log/",
+    "host": "127.0.0.1",
+    "port": 5678,
+    "cli_args": {
+      "webdriver.chrome.driver": "bin/chromedriver"
+    }
+  },
+  "test_settings": {
+    "chrome": {
+      "launch_url": "https://localhost:4000",
+      "selenium_port": 5678,
+      "selenium_host": "localhost",
+      "silent": true,
+      "screenshots": {
+        "enabled": false,
+        "path": "screenshots/Chrome/"
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "chromeOptions": {
+          "args": [
+            "disable-web-security",
+            "ignore-certificate-errors",
+            "--test-type"
+          ],
+          "prefs": {
+            "credentials_enable_service": false,
+            "profile.password_manager_enabled": false
+          }
+        }
       }
     },
-    "test_settings" : {
-        "chrome": {
-            "launch_url": "http://localhost",
-            "selenium_port": 5678,
-            "selenium_host": "localhost",
-            "silent": true,
-            "screenshots": {
-              "enabled": false,
-              "path": "screenshots/Chrome/"
-            },
-            "desiredCapabilities": {
-              "browserName": "chrome",
-              "javascriptEnabled" : true,
-              "acceptSslCerts" : true,
-              "chromeOptions": {
-                "args": [
-                  "disable-web-security",
-                  "ignore-certificate-errors",
-                  "--test-type"
-                ],
-                "prefs" : {
-                  "credentials_enable_service" : false,
-                  "profile.password_manager_enabled" : false
-                }
-              }
-            }
-          },
-  
-      "edge" : {
-        "desiredCapabilities": {
-          "browserName": "MicrosoftEdge"
-        }
+
+    "edge": {
+      "desiredCapabilities": {
+        "browserName": "MicrosoftEdge"
       }
     }
   }
+}

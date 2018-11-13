@@ -1,12 +1,10 @@
 module.exports = {
   'Demo test Google': function (client) {
+    console.log(",,,", client.page.index().a)
     client
-      .url('http://www.google.com')
+      .url(client.globals.getApiUrlFromTerminal())
       .waitForElementVisible('body', 1000)
-      .assert.title('Google')
-      .assert.visible('input[type=text]')
-      .setValue('input[type=text]', 'rembrandt van rijn')
-      .pause(1000)
+      .pause(5000)
       .end();
   },
   afterEach: function (browser, done) {
