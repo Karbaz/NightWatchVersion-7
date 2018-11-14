@@ -5,7 +5,8 @@ var pageConfig = {
 var urlsConfig = {
     "L": "https://www.bewakoof.com/", //live url
     "P": "https://p1.bewakoof.com/", // p1 to p6 url
-    "T": "https://localhost:4000/" //local host
+    "T": "https://localhost:4000/", //local host
+    "B": "http://localhost:5001/"
 }
 
 var slackConfig = {

@@ -3,7 +3,7 @@ var page_config = {
     SlackNotification: require("../../global_imports").SlackNotification,
     slackWebHook: require("../../nightwatch").SLACK,
     url_pointer: require("../../nightwatch").LIVE,
-    facebook_1: require("../../login_details").facebook_1,
+    google_1: require("../../login_details").google_1,
     common_logout: require("../../globals_path").common_logout
 }
 var file_name;
@@ -17,9 +17,9 @@ module.exports = {
         client.waitForElementVisible(client.page.login().google_button, 1000)
         client.click(client.page.login().google_button, function (callback) {})
         client.waitForElementVisible(client.page.login().google_username, 1000)
-        client.setValue(client.page.login().google_username, page_config.facebook_1.user_name)
+        client.setValue(client.page.login().google_username, [page_config.google_1.user_name, client.Keys.ENTER])
         client.waitForElementVisible(client.page.login().google_password, 1000)
-        client.setValue(client.page.login().google_password, [page_config.facebook_1.password, client.Keys.ENTER])
+        client.setValue(client.page.login().google_password, [page_config.google_1.password, client.Keys.ENTER])
         client.keys(client.keys.ENTER)
         client.pause(10000)
         page_config.common_logout(client)
