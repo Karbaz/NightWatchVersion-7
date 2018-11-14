@@ -25,13 +25,13 @@ module.exports = {
         client.setValue(client.page.login().sign_up_lname,"khan")
 
         client.waitForElementVisible(client.page.login().sign_up_email,1000)
-        client.setValue(client.page.login().sign_up_email,"assadasdsdasd.k@bewakoof.com")
+        client.setValue(client.page.login().sign_up_email,"assaddasd.k@bewakoof.com")
 
         client.waitForElementVisible(client.page.login().sign_up_password,1000)
         client.setValue(client.page.login().sign_up_password,"123456")
 
         client.waitForElementVisible(client.page.login().sign_up_mobile,1000)
-        client.setValue(client.page.login().sign_up_mobile,"9876932462")
+        client.setValue(client.page.login().sign_up_mobile,"9873456462")
 
         client.waitForElementVisible(client.page.login().sign_up_gender_male,1000)
         client.click(client.page.login().sign_up_gender_male)
@@ -39,7 +39,7 @@ module.exports = {
         client.waitForElementVisible(client.page.login().sign_up_submit,1000)
         client.click(client.page.login().sign_up_submit)
         
-        client.pause(5000)
+        client.pause(3000)
         
         page_config.common_logout(client)
         client.end()

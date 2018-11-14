@@ -21,7 +21,7 @@ module.exports = {
         client.waitForElementVisible(client.page.login().google_password, 1000)
         client.setValue(client.page.login().google_password, [page_config.google_1.password, client.Keys.ENTER])
         client.keys(client.keys.ENTER)
-        client.pause(5000)
+        client.pause(3000)
         page_config.common_logout(client)
         client.end()
     },
