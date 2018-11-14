@@ -30,6 +30,8 @@ module.exports = {
     forgot_password_statement: "//*[@id='forgot_password_statement']",
     forgot_password_back: "//*[@id='forgot_password_back']",
 
+    error_class:"//p[@class='error']"
+
 
 
 }
