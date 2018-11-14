@@ -7,7 +7,7 @@ var date = new Date();
 exports.sendSuccessSlackNotification = (config) => {
     const webhook = new IncomingWebhook(config.web_hook);
     webhook.send({
-            "text": `Automation Testing Completed Run At *[ ${date} ]* Active Url =>  *[ ${config.url} ]* `,
+            "text": `Automation Testing Completed Run On *[ ${date.toDateString()} ${date.toLocaleTimeString()} ]* Active Url =>  *[ ${config.url} ]* `,
             "attachments": [{
                 "color": "good",
                 "author_name": "Testing BOT",
@@ -29,7 +29,7 @@ exports.sendFailureSlackNotification = (config) => {
     let SlackTestString = "";
     config.test.map((value, index) => SlackTestString += `[Message]: ${value.message}\n[Failure Message]: ${value.failure}\n[Tag Name]: ${value.tagname} \n \n`)
     webhook.send({
-            "text": `Automation Testing Completed Run At *[ ${date} ]* Active Url =>  *[ ${config.url} ]* `,
+            "text": `Automation Testing Completed Run On *[ ${date.toDateString()} ${date.toLocaleTimeString()} ]* Active Url =>  *[ ${config.url} ]* `,
             "attachments": [{
                 "color": "danger",
                 "author_name": "Testing BOT",

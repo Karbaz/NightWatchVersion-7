@@ -1,14 +1,16 @@
 let test_case_failure_collections = [];
 var config = {
     SlackNotification: require("../../global_imports").SlackNotification,
-    slackWebHook: require("../../globals_path").slackWebHook
+    slackWebHook: require("../../nightwatch").SLACK,
+    url_pointer:require("../../nightwatch").LIVE
 }
 var file_name;
+console.log(config.url_pointer,"url_pointer")
 
 module.exports = {
     'Basic Login With UserName And Password': function (client) {
         client.useXpath()
-        client.url(client.globals.getApiUrlFromTerminal())
+        client.url(config.url_pointer)
         client.waitForElementVisible(client.page.login().login_tag, 1000)
         client.click(client.page.login().login_tag, function (callback) {
             // this.verify.ok(false, "Title Present")
@@ -37,10 +39,10 @@ module.exports = {
         done()
     },
     after: function (browser, done) {
-        let con = config.slackWebHook();
+        let con = config.slackWebHook;
         con["test"] = test_case_failure_collections;
         con["fileName"] = file_name
-        con["url"] = browser.globals.getApiUrlFromTerminal()
+        con["url"] = config.url_pointer
 
         if (test_case_failure_collections.length > 0) {
             config.SlackNotification.sendFailureSlackNotification(con)
