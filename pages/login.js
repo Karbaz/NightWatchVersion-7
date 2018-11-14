@@ -12,5 +12,16 @@ module.exports = {
 
     google_button: "//body/div[@id='app']/div/div/div/div[@class='backdrop']/div[contains(@class,'loginPopup')]/div/div/div[@class='_lU']/div[@class='_nD']/div[@class='_nH']/button[2]",
     google_username: "//*[@id='identifierId']",
-    google_password: "//input[@name='password']"
+    google_password: "//input[@name='password']",
+
+    sign_up_header: "//*[@id='sign_up']",
+    sign_up_fname: "//*[@id='fname']",
+    sign_up_lname: "//*[@id='lname']",
+    sign_up_email: "//*[@id='email']",
+    sign_up_password: "//*[@id='password']",
+    sign_up_mobile: "//*[@id='mobile']",
+    sign_up_gender_male: "//*[@id='male']",
+    sign_up_gender_female: "//*[@id='female']",
+    sign_up_submit: "//*[@id='sign_up_submit']"
+
 }
