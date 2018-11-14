@@ -9,7 +9,7 @@ var page_config = {
 var file_name;
 module.exports = {
     '@tags': ['login'],
-    'Basic Login With UserName And Password': function (client) {
+    'Basic Login And Logout': function (client) {
         client.useXpath()
         client.url(page_config.url_pointer)
         page_config.common_login(client)
