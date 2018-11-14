@@ -1,0 +1,499 @@
+[1;35mStarting selenium server in parallel mode... [0m[1;35mstarted - PID: [0m 39273
+
+Started child process for:[1;33m[40m test/Login/basic_login [0m
+Started child process for:[1;33m[40m test/Login/facebook_login [0m
+Started child process for:[1;33m[40m test/Login/forgot_password [0m
+Started child process for:[1;33m[40m test/Login/google_login [0m
+Started child process for:[1;33m[40m test/Login/login_with_mobile_number [0m
+Started child process for:[1;33m[40m test/Login/sign_up [0m
+Started child process for:[1;33m[40m test/TagCounter/tag_counter [0m
+[0;37m[45m test/Login/forgot_password [0m  \n
+[0;37m[45m test/Login/forgot_password [0m  [0;36m[Login / Forgot Password] Test Suite[0m
+[0;35m========================================[0m
+[0;37m[45m test/Login/forgot_password [0m  
+[0;37m[45m test/Login/forgot_password [0m  Results for:  [0;32mForgot Password[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 339 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//input[@id='desktop_username']> was visible after 228 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='ForgotPassword']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='ForgotPassword']> was visible after 848 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='forgot_password_email']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='forgot_password_email']> was visible after 160 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='forgot_password_statement']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='forgot_password_statement']> was visible after 650 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='forgot_password_back']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='forgot_password_back']> was visible after 97 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32mOK.[0m [0;32m6[0m assertions passed. (28.018s)
+
+  >>[1;33m[40m test/Login/forgot_password [0mfinished.  
+
+[0;37m[44m test/Login/basic_login [0m  \n
+[0;37m[44m test/Login/basic_login [0m  [0;36m[Login / Basic Login] Test Suite[0m
+[0;35m====================================[0m
+[0;37m[44m test/Login/basic_login [0m  
+[0;37m[44m test/Login/basic_login [0m  Results for:  [0;32mBasic Login And Logout[0m
+[0;37m[44m test/Login/basic_login [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 239 milliseconds.
+[0;37m[44m test/Login/basic_login [0m  [0;32m✔[0m Element <//input[@id='desktop_username']> was visible after 100 milliseconds.
+[0;37m[44m test/Login/basic_login [0m  [0;32m✔[0m Element <//input[@id='desktop_password']> was visible after 712 milliseconds.
+[0;37m[44m test/Login/basic_login [0m  [0;32m✔[0m Element <//i[@id='profile_icon']> was visible after 1021 milliseconds.
+[0;37m[44m test/Login/basic_login [0m  [0;32m✔[0m Click profile.
+[0;37m[44m test/Login/basic_login [0m  [0;32m✔[0m Click Logout
+[0;37m[44m test/Login/basic_login [0m  [0;32mOK.[0m [0;32m6[0m assertions passed. (38.122s)
+[0;30m[42m test/Login/sign_up [0m  \n
+[0;30m[42m test/Login/sign_up [0m  [0;36m[Login / Sign Up] Test Suite[0m
+[0;35m================================[0m
+[0;30m[42m test/Login/sign_up [0m  
+[0;30m[42m test/Login/sign_up [0m  Results for:  [0;32mSign Up[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 130 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='sign_up']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='sign_up']> was visible after 88 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='fname']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='fname']> was visible after 415 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='lname']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='lname']> was visible after 215 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='email']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='email']> was visible after 82 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='password']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='password']> was visible after 182 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='mobile']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='mobile']> was visible after 105 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='male']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='male']> was visible after 132 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='sign_up_submit']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='sign_up_submit']> was visible after 169 milliseconds.
+[0;30m[42m test/Login/sign_up [0m  [0;31m✖[0m Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+    at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;30m[42m test/Login/sign_up [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;30m[42m test/Login/sign_up [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:28:14)
+    at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;30m[42m test/Login/sign_up [0m  [0;31m✖[0m Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;30m[42m test/Login/sign_up [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+    at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;30m[42m test/Login/sign_up [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;30m[42m test/Login/sign_up [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:30:28)[0m
+[0;30m[42m test/Login/sign_up [0m  [0;31m✖[0m Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+    at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;30m[42m test/Login/sign_up [0m  [0;31m✖[0m Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m
+[0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+[0;30m[42m test/Login/sign_up [0m  [0;31mFAILED: [0m [0;31m4[0m assertions failed, [0;31m2[0m errors and [0;32m9[0m passed (38.561s)
+
+  >>[1;33m[40m test/Login/basic_login [0mfinished.  
+
+
+  >>[1;33m[40m test/Login/sign_up [0mfinished.  
+
+[0;30m[42m test/Login/facebook_login [0m  \n
+[0;30m[42m test/Login/facebook_login [0m  [0;36m[Login / Facebook Login] Test Suite[0m
+[0;35m=======================================[0m
+[0;30m[42m test/Login/facebook_login [0m  
+[0;30m[42m test/Login/facebook_login [0m  Results for:  [0;32mFacebook Login[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 1005 milliseconds.
+[0;30m[42m test/Login/facebook_login [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='facebook_login']". Only the first one will be checked.[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;32m✔[0m Element <//*[@id='facebook_login']> was visible after 352 milliseconds.
+[0;30m[42m test/Login/facebook_login [0m  [0;32m✔[0m Element <//input[@id='email']> was visible after 105 milliseconds.
+[0;30m[42m test/Login/facebook_login [0m  [0;32m✔[0m Element <//input[@id='pass']> was visible after 122 milliseconds.
+[0;30m[42m test/Login/facebook_login [0m  [0;31m✖[0m Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+    at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:28:14)
+    at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;31m✖[0m Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+    at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:30:28)[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;31m✖[0m Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+    at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;31m✖[0m Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+[0;30m[42m test/Login/facebook_login [0m  [0;31mFAILED: [0m [0;31m4[0m assertions failed, [0;31m2[0m errors and [0;32m4[0m passed (40.346s)
+
+  >>[1;33m[40m test/Login/facebook_login [0mfinished.  
+
+[0;37m[41m test/Login/google_login [0m  \n
+[0;37m[41m test/Login/google_login [0m  [0;36m[Login / Google Login] Test Suite[0m
+[0;35m=====================================[0m
+[0;37m[41m test/Login/google_login [0m  
+[0;37m[41m test/Login/google_login [0m  Results for:  [0;32mGoogle Login[0m
+[0;37m[41m test/Login/google_login [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 279 milliseconds.
+[0;37m[41m test/Login/google_login [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='google_login']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/google_login [0m  [0;32m✔[0m Element <//*[@id='google_login']> was visible after 260 milliseconds.
+[0;37m[41m test/Login/google_login [0m  [0;31m✖[0m Timed out while waiting for element <//*[@id='identifierId']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;90m    at Object.Google Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/google_login.js:19:16)
+    at process._tickCallback (internal/process/next_tick.js:176:11)[0m
+[0;37m[41m test/Login/google_login [0m  [0;32m✔[0m Element <//input[@name='password']> was visible after 1724 milliseconds.
+[0;37m[41m test/Login/google_login [0m  [0;31m✖[0m Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;37m[41m test/Login/google_login [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+    at Object.Google Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/google_login.js:25:21)[0m
+[0;37m[41m test/Login/google_login [0m  [0;32m✔[0m Click profile.
+[0;37m[41m test/Login/google_login [0m  [0;32m✔[0m Click Logout
+[0;37m[41m test/Login/google_login [0m  [0;31mFAILED: [0m [0;31m2[0m assertions failed and [0;32m5[0m passed (42.145s)
+
+  >>[1;33m[40m test/Login/google_login [0mfinished.  
+
+[0;37m[44m test/Login/login_with_mobile_number [0m  \n
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;36m[Login / Login With Mobile Number] Test Suite[0m
+[0;35m=================================================[0m
+[0;37m[44m test/Login/login_with_mobile_number [0m  
+[0;37m[44m test/Login/login_with_mobile_number [0m  Results for:  [0;32mTo verify Email/Mobile no. empty field[0m
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 188 milliseconds.
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//p[@class='error']> was visible after 353 milliseconds.
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Testing if element <//p[@class='error']> contains text: "Email/Mobile No. is required".
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (20.676s)
+[0;37m[44m test/Login/login_with_mobile_number [0m  
+[0;37m[44m test/Login/login_with_mobile_number [0m  Results for:  [0;32mTo verify login with valid Mobile number [0m
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 113 milliseconds.
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//input[@id='desktop_password']> was visible after 637 milliseconds.
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//i[@id='profile_icon']> was visible after 604 milliseconds.
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Click profile.
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Click Logout
+[0;37m[44m test/Login/login_with_mobile_number [0m  [0;32mOK.[0m [0;32m5[0m assertions passed. (22.88s)
+
+  >>[1;33m[40m test/Login/login_with_mobile_number [0mfinished.  
+
+[0;37m[45m test/TagCounter/tag_counter [0m  \n
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;36m[Tag Counter / Tag Counter] Test Suite[0m
+[0;35m==========================================[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  
+[0;37m[45m test/TagCounter/tag_counter [0m  Results for:  [0;32m4 ALL PAGES[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 200 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (17.873s)
+[0;37m[45m test/TagCounter/tag_counter [0m  
+[0;37m[45m test/TagCounter/tag_counter [0m  Results for:  [0;32m3 MOBILE BRAND PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 543 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (16.705s)
+[0;37m[45m test/TagCounter/tag_counter [0m  
+[0;37m[45m test/TagCounter/tag_counter [0m  Results for:  [0;32m2 MOBILE PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 54 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (9.331s)
+
+Results for:  [0;32m1 CATEGORY PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 58 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (13.554s)
+
+Results for:  [0;32m0 PRODUCT PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 36 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (8.726s)
+
+  >>[1;33m[40m test/TagCounter/tag_counter [0mfinished.  
+
+
+[1;31m _________________________________________________[0m
+
+ [1;31mTEST FAILURE:[0m [0;31m4[0m errors during execution,  [0;31m10[0m assertions failed, [0;32m53[0m passed. (1m 8s)
+
+[0;31m ✖ Login/sign_up[0m
+
+   - Sign Up [1;33m(38.561s)[0m
+[0;31m   Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+       at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;31m   Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+       at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;31m   Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+       at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;31m   Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+
+[0;31m ✖ Login/facebook_login[0m
+
+   - Facebook Login [1;33m(40.346s)[0m
+[0;31m   Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+       at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;31m   Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+       at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;31m   Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+       at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;31m   Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+
+[0;31m ✖ Login/google_login[0m
+
+   - Google Login [1;33m(42.145s)[0m
+[0;31m   Timed out while waiting for element <//*[@id='identifierId']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.Google Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/google_login.js:19:16)
+       at process._tickCallback (internal/process/next_tick.js:176:11)[0m
+[0;31m   Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+       at Object.Google Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/google_login.js:25:21)[0m
+
+[1;31m
+Error writing log file to:[0m /Users/arbazkhan/Desktop/NightWatchJs/log/selenium-debug.log
+[1;35mStarting selenium server in parallel mode... [0m[1;35mstarted - PID: [0m 39556
+
+Started child process for:[1;33m[40m test/Login/basic_login [0m
+Started child process for:[1;33m[40m test/Login/facebook_login [0m
+Started child process for:[1;33m[40m test/Login/forgot_password [0m
+Started child process for:[1;33m[40m test/Login/google_login [0m
+Started child process for:[1;33m[40m test/Login/login_with_mobile_number [0m
+Started child process for:[1;33m[40m test/Login/sign_up [0m
+Started child process for:[1;33m[40m test/TagCounter/tag_counter [0m
+[0;37m[45m test/Login/forgot_password [0m  \n
+[0;37m[45m test/Login/forgot_password [0m  [0;36m[Login / Forgot Password] Test Suite[0m
+[0;35m========================================[0m
+[0;37m[45m test/Login/forgot_password [0m  
+[0;37m[45m test/Login/forgot_password [0m  Results for:  [0;32mForgot Password[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 284 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//input[@id='desktop_username']> was visible after 1561 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='ForgotPassword']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='ForgotPassword']> was visible after 400 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='forgot_password_email']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='forgot_password_email']> was visible after 153 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='forgot_password_statement']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='forgot_password_statement']> was visible after 734 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='forgot_password_back']". Only the first one will be checked.[0m
+[0;37m[45m test/Login/forgot_password [0m  [0;32m✔[0m Element <//*[@id='forgot_password_back']> was visible after 74 milliseconds.
+[0;37m[45m test/Login/forgot_password [0m  [0;32mOK.[0m [0;32m6[0m assertions passed. (27.963s)
+
+  >>[1;33m[40m test/Login/forgot_password [0mfinished.  
+
+[0;30m[42m test/Login/basic_login [0m  \n
+[0;36m[Login / Basic Login] Test Suite[0m
+[0;35m====================================[0m
+[0;30m[42m test/Login/basic_login [0m  
+[0;30m[42m test/Login/basic_login [0m  Results for:  [0;32mBasic Login And Logout[0m
+[0;30m[42m test/Login/basic_login [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 414 milliseconds.
+[0;30m[42m test/Login/basic_login [0m  [0;32m✔[0m Element <//input[@id='desktop_username']> was visible after 1773 milliseconds.
+[0;30m[42m test/Login/basic_login [0m  [0;32m✔[0m Element <//input[@id='desktop_password']> was visible after 5570 milliseconds.
+[0;30m[42m test/Login/basic_login [0m  [0;32m✔[0m Element <//i[@id='profile_icon']> was visible after 1061 milliseconds.
+[0;30m[42m test/Login/basic_login [0m  [0;32m✔[0m Click profile.
+[0;30m[42m test/Login/basic_login [0m  [0;32m✔[0m Click Logout
+[0;30m[42m test/Login/basic_login [0m  [0;32mOK.[0m [0;32m6[0m assertions passed. (33.366s)
+
+  >>[1;33m[40m test/Login/basic_login [0mfinished.  
+
+[0;37m[41m test/Login/sign_up [0m  \n
+[0;37m[41m test/Login/sign_up [0m  [0;36m[Login / Sign Up] Test Suite[0m
+[0;35m================================[0m
+[0;37m[41m test/Login/sign_up [0m  
+[0;37m[41m test/Login/sign_up [0m  Results for:  [0;32mSign Up[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 122 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='sign_up']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='sign_up']> was visible after 218 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='fname']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='fname']> was visible after 402 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='lname']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='lname']> was visible after 150 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='email']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='email']> was visible after 125 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='password']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='password']> was visible after 178 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='mobile']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='mobile']> was visible after 463 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='male']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='male']> was visible after 454 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='sign_up_submit']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/sign_up [0m  [0;32m✔[0m Element <//*[@id='sign_up_submit']> was visible after 236 milliseconds.
+[0;37m[41m test/Login/sign_up [0m  [0;31m✖[0m Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;37m[41m test/Login/sign_up [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+    at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;37m[41m test/Login/sign_up [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;37m[41m test/Login/sign_up [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:28:14)
+    at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;37m[41m test/Login/sign_up [0m  [0;31m✖[0m Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;37m[41m test/Login/sign_up [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+    at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;37m[41m test/Login/sign_up [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;37m[41m test/Login/sign_up [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:30:28)[0m
+[0;37m[41m test/Login/sign_up [0m  [0;31m✖[0m Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;37m[41m test/Login/sign_up [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+    at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;37m[41m test/Login/sign_up [0m  [0;31m✖[0m Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m
+[0;37m[41m test/Login/sign_up [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+[0;37m[41m test/Login/sign_up [0m  [0;31mFAILED: [0m [0;31m4[0m assertions failed, [0;31m2[0m errors and [0;32m9[0m passed (36.137s)
+
+  >>[1;33m[40m test/Login/sign_up [0mfinished.  
+
+[0;37m[41m test/Login/facebook_login [0m  \n
+[0;37m[41m test/Login/facebook_login [0m  [0;36m[Login / Facebook Login] Test Suite[0m
+[0;35m=======================================[0m
+[0;37m[41m test/Login/facebook_login [0m  
+[0;37m[41m test/Login/facebook_login [0m  Results for:  [0;32mFacebook Login[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 103 milliseconds.
+[0;37m[41m test/Login/facebook_login [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='facebook_login']". Only the first one will be checked.[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;32m✔[0m Element <//*[@id='facebook_login']> was visible after 1930 milliseconds.
+[0;37m[41m test/Login/facebook_login [0m  [0;32m✔[0m Element <//input[@id='email']> was visible after 169 milliseconds.
+[0;37m[41m test/Login/facebook_login [0m  [0;32m✔[0m Element <//input[@id='pass']> was visible after 93 milliseconds.
+[0;37m[41m test/Login/facebook_login [0m  [0;31m✖[0m Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+    at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:28:14)
+    at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;31m✖[0m Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+    at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;31mERROR: Unable to locate element: "//i[@id='profile_icon']" using: xpath[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:30:28)[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;31m✖[0m Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m
+[0;90m    at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+    at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;31m✖[0m Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;90m    at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+[0;37m[41m test/Login/facebook_login [0m  [0;31mFAILED: [0m [0;31m4[0m assertions failed, [0;31m2[0m errors and [0;32m4[0m passed (42.126s)
+[0;30m[42m test/Login/login_with_mobile_number [0m  \n
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;36m[Login / Login With Mobile Number] Test Suite[0m
+[0;35m=================================================[0m
+[0;30m[42m test/Login/login_with_mobile_number [0m  
+[0;30m[42m test/Login/login_with_mobile_number [0m  Results for:  [0;32mTo verify Email/Mobile no. empty field[0m
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 302 milliseconds.
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//p[@class='error']> was visible after 244 milliseconds.
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Testing if element <//p[@class='error']> contains text: "Email/Mobile No. is required".
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (24.693s)
+[0;30m[42m test/Login/login_with_mobile_number [0m  Results for:  [0;32mTo verify login with valid Mobile number [0m
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 71 milliseconds.
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//input[@id='desktop_password']> was visible after 588 milliseconds.
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Element <//i[@id='profile_icon']> was visible after 1062 milliseconds.
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Click profile.
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32m✔[0m Click Logout
+[0;30m[42m test/Login/login_with_mobile_number [0m  [0;32mOK.[0m [0;32m5[0m assertions passed. (17.426s)
+
+  >>[1;33m[40m test/Login/login_with_mobile_number [0mfinished.  
+
+[0;37m[44m test/Login/google_login [0m  \n
+[0;37m[44m test/Login/google_login [0m  [0;36m[Login / Google Login] Test Suite[0m
+[0;35m=====================================[0m
+[0;37m[44m test/Login/google_login [0m  
+[0;37m[44m test/Login/google_login [0m  Results for:  [0;32mGoogle Login[0m
+[0;37m[44m test/Login/google_login [0m  [0;32m✔[0m Element <//a[@id='a_login']> was visible after 227 milliseconds.
+[0;37m[44m test/Login/google_login [0m  [0;32m  Warn: WaitForElement found 2 elements for selector "//*[@id='google_login']". Only the first one will be checked.[0m
+[0;37m[44m test/Login/google_login [0m  [0;32m✔[0m Element <//*[@id='google_login']> was visible after 372 milliseconds.
+[0;37m[44m test/Login/google_login [0m  [0;32m✔[0m Element <//*[@id='identifierId']> was visible after 7184 milliseconds.
+[0;37m[44m test/Login/google_login [0m  [0;32m✔[0m Element <//input[@name='password']> was visible after 1445 milliseconds.
+[0;37m[44m test/Login/google_login [0m  [0;32m✔[0m Element <//i[@id='profile_icon']> was visible after 3715 milliseconds.
+[0;37m[44m test/Login/google_login [0m  [0;32m✔[0m Click profile.
+[0;37m[44m test/Login/google_login [0m  [0;32m✔[0m Click Logout
+[0;37m[44m test/Login/google_login [0m  [0;32mOK.[0m [0;32m7[0m assertions passed. (43.129s)
+
+  >>[1;33m[40m test/Login/facebook_login [0mfinished.  
+
+
+  >>[1;33m[40m test/Login/google_login [0mfinished.  
+
+[0;37m[45m test/TagCounter/tag_counter [0m  \n
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;36m[Tag Counter / Tag Counter] Test Suite[0m
+[0;35m==========================================[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  
+[0;37m[45m test/TagCounter/tag_counter [0m  Results for:  [0;32m4 ALL PAGES[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 393 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (23.859s)
+[0;37m[45m test/TagCounter/tag_counter [0m  
+[0;37m[45m test/TagCounter/tag_counter [0m  Results for:  [0;32m3 MOBILE BRAND PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 106 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (14.155s)
+
+Results for:  [0;32m2 MOBILE PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 67 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (7.8s)
+[0;37m[45m test/TagCounter/tag_counter [0m  
+[0;37m[45m test/TagCounter/tag_counter [0m  Results for:  [0;32m1 CATEGORY PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 44 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (12.359s)
+[0;37m[45m test/TagCounter/tag_counter [0m  
+[0;37m[45m test/TagCounter/tag_counter [0m  Results for:  [0;32m0 PRODUCT PAGE[0m
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Element <body> was visible after 39 milliseconds.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Passed [equal]: 1 == 1
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32m✔[0m Testing if element <h1> is present.
+[0;37m[45m test/TagCounter/tag_counter [0m  [0;32mOK.[0m [0;32m3[0m assertions passed. (8.206s)
+
+  >>[1;33m[40m test/TagCounter/tag_counter [0mfinished.  
+
+
+[1;31m _________________________________________________[0m
+
+ [1;31mTEST FAILURE:[0m [0;31m4[0m errors during execution,  [0;31m8[0m assertions failed, [0;32m55[0m passed. (1m 9s)
+
+[0;31m ✖ Login/sign_up[0m
+
+   - Sign Up [1;33m(36.137s)[0m
+[0;31m   Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+       at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;31m   Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+       at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;31m   Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+       at Object.Sign Up (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/sign_up.js:44:21)[0m
+[0;31m   Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+
+[0;31m ✖ Login/facebook_login[0m
+
+   - Facebook Login [1;33m(42.126s)[0m
+[0;31m   Timed out while waiting for element <//i[@id='profile_icon']> to be present for 1000 milliseconds. [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:26:23)
+       at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;31m   Click profile.  [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:29:24)
+       at endReadableNT (_stream_readable.js:1106:12)[0m
+[0;31m   Click Logout [1;37m - expected [0;32m"visible"[0m[0m but got: [0;31m"not found"[0m[0m
+[0;90m       at Object.common_logout (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:34:14)
+       at Object.Facebook Login (/Users/arbazkhan/Desktop/NightWatchJs/test/Login/facebook_login.js:25:21)[0m
+[0;31m   Failed [ok]: (Element not Found   ( //a[@id='logout'] )   ) [1;37m - expected [0;32m"true"[0m[0m but got: [0;31m"false"[0m[0m
+[0;90m       at Object.<anonymous> (/Users/arbazkhan/Desktop/NightWatchJs/globals_path.js:36:33)[0m
+
+[1;31m
+Error writing log file to:[0m /Users/arbazkhan/Desktop/NightWatchJs/log/selenium-debug.log
+[1;35mStarting selenium server... [0m[1;35mstarted - PID: [0m 39818
+
+[0;36m[Login / Basic Login] Test Suite[0m
+[0;35m====================================[0m
+
+Running:  [0;32mBasic Login And Logout[0m
+ [0;32m✔[0m Element <//a[@id='a_login']> was visible after 61 milliseconds.
+ [0;32m✔[0m Element <//input[@id='desktop_username']> was visible after 59 milliseconds.
+ [0;32m✔[0m Element <//input[@id='desktop_password']> was visible after 576 milliseconds.
+ [0;32m✔[0m Element <//i[@id='profile_icon']> was visible after 563 milliseconds.
+ [0;32m✔[0m Click profile. 
+ [0;32m✔[0m Click Logout
+
+[0;32mOK.[0m [0;32m6[0m assertions passed. (8.807s)
+
+[1;31m
+Error writing log file to:[0m /Users/arbazkhan/Desktop/NightWatchJs/log/selenium-debug.log
+Message sent:  { text: 'ok' }
+[1;35mStarting selenium server... [0m[1;35mstarted - PID: [0m 39922
+
+[0;36m[Login / Basic Login] Test Suite[0m
+[0;35m====================================[0m
+
+Running:  [0;32mBasic Login And Logout[0m
+ [0;32m✔[0m Element <//a[@id='a_login']> was visible after 55 milliseconds.
+ [0;32m✔[0m Element <//input[@id='desktop_username']> was visible after 52 milliseconds.
+ [0;32m✔[0m Element <//input[@id='desktop_password']> was visible after 564 milliseconds.
+ [0;32m✔[0m Element <//i[@id='profile_icon']> was visible after 564 milliseconds.
+ [0;32m✔[0m Click profile. 
+ [0;32m✔[0m Click Logout
+
+[0;32mOK.[0m [0;32m6[0m assertions passed. (8.34s)
+
+[1;31m
+Error writing log file to:[0m /Users/arbazkhan/Desktop/NightWatchJs/log/selenium-debug.log
+Message sent:  { text: 'ok' }
