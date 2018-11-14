@@ -3,46 +3,35 @@ var page_config = {
     SlackNotification: require("../../global_imports").SlackNotification,
     slackWebHook: require("../../nightwatch").SLACK,
     url_pointer: require("../../nightwatch").LIVE,
-    facebook_1: require("../../login_details").facebook_1,
-    common_logout: require("../../globals_path").common_logout
 }
 var file_name;
 module.exports = {
-    '@tags': ['login'],
-    'Sign Up': function (client) {
+    '@tags': ['FORGOT PASSWORD'],
+    'Forgot Password': function (client) {
         client.useXpath()
         client.url(page_config.url_pointer)
-        
+
         client.waitForElementVisible(client.page.login().login_tag, 1000)
         client.click(client.page.login().login_tag, function (callback) {})
-        client.waitForElementVisible(client.page.login().sign_up_header, 1000)
-        client.click(client.page.login().sign_up_header, function (callback) {})
 
-        client.waitForElementVisible(client.page.login().sign_up_fname,1000)
-        client.setValue(client.page.login().sign_up_fname,"arbaz")
+        client.waitForElementVisible(client.page.login().email_tag, 1000)
+        client.setValue(client.page.login().email_tag, "test@yahoo.com")
+        client.keys(client.Keys.ENTER)
 
-        client.waitForElementVisible(client.page.login().sign_up_lname,1000)
-        client.setValue(client.page.login().sign_up_lname,"khan")
+        client.waitForElementVisible(client.page.login().forgot_password, 1000)
+        client.click(client.page.login().forgot_password, function (callback) {})
 
-        client.waitForElementVisible(client.page.login().sign_up_email,1000)
-        client.setValue(client.page.login().sign_up_email,"sda2wasd.k@bewakoof.com")
+        client.waitForElementVisible(client.page.login().forgot_password_username, 1000)
+        client.setValue(client.page.login().forgot_password_username, "test@yahoo.com")
+        client.click(client.page.login().forgot_password_submit, function (callback) {})
 
-        client.waitForElementVisible(client.page.login().sign_up_password,1000)
-        client.setValue(client.page.login().sign_up_password,"123456")
+        client.waitForElementVisible(client.page.login().forgot_password_statement, 1000)
 
-        client.waitForElementVisible(client.page.login().sign_up_mobile,1000)
-        client.setValue(client.page.login().sign_up_mobile,"9879876462")
-
-        client.waitForElementVisible(client.page.login().sign_up_gender_male,1000)
-        client.click(client.page.login().sign_up_gender_male)
-
-        client.waitForElementVisible(client.page.login().sign_up_submit,1000)
-        client.click(client.page.login().sign_up_submit)
+        client.waitForElementVisible(client.page.login().forgot_password_back, 1000)
+        client.click(client.page.login().forgot_password_back)
         
-        client.pause(3000)
-        
-        page_config.common_logout(client)
         client.end()
+
     },
     afterEach: function (browser, done) {
         if (browser.currentTest && browser.currentTest.results && browser.currentTest.results.testcases) {

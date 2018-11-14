@@ -22,6 +22,14 @@ module.exports = {
     sign_up_mobile: "//*[@id='mobile']",
     sign_up_gender_male: "//*[@id='male']",
     sign_up_gender_female: "//*[@id='female']",
-    sign_up_submit: "//*[@id='sign_up_submit']"
+    sign_up_submit: "//*[@id='sign_up_submit']",
+
+    forgot_password: "//*[@id='ForgotPassword']",
+    forgot_password_username: "//*[@id='forgot_password_email']",
+    forgot_password_submit: "//*[@id='forgot_password_submit']",
+    forgot_password_statement: "//*[@id='forgot_password_statement']",
+    forgot_password_back: "//*[@id='forgot_password_back']",
+
+
 
 }
