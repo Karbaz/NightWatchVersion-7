@@ -8,7 +8,7 @@ var page_config = {
 }
 var file_name;
 module.exports = {
-    '@tags': ['login'],
+    '@tags': ['SIGN UP'],
     'Sign Up': function (client) {
         client.useXpath()
         client.url(page_config.url_pointer)
