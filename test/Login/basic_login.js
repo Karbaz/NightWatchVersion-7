@@ -1,26 +1,19 @@
 let test_case_failure_collections = [];
-var config = {
+var page_config = {
     SlackNotification: require("../../global_imports").SlackNotification,
     slackWebHook: require("../../nightwatch").SLACK,
-    url_pointer:require("../../nightwatch").LIVE
+    url_pointer: require("../../nightwatch").LIVE,
+    common_login: require("../../globals_path").common_login,
+    common_logout: require("../../globals_path").common_logout
 }
 var file_name;
-console.log(config.url_pointer,"url_pointer")
-
 module.exports = {
+    '@tags': ['login'],
     'Basic Login With UserName And Password': function (client) {
         client.useXpath()
-        client.url(config.url_pointer)
-        client.waitForElementVisible(client.page.login().login_tag, 1000)
-        client.click(client.page.login().login_tag, function (callback) {
-            // this.verify.ok(false, "Title Present")
-        })
-        client.waitForElementVisible(client.page.login().email_tag, 1000)
-        client.setValue(client.page.login().email_tag, "test@yahoo.com")
-        client.keys(client.Keys.ENTER)
-        client.waitForElementVisible(client.page.login().password_tag, 1000)
-        client.setValue(client.page.login().password_tag, "123456")
-        client.keys(client.Keys.ENTER)
+        client.url(page_config.url_pointer)
+        page_config.common_login(client)
+        page_config.common_logout(client)
         client.end()
     },
     afterEach: function (browser, done) {
@@ -39,15 +32,15 @@ module.exports = {
         done()
     },
     after: function (browser, done) {
-        let con = config.slackWebHook;
+        let con = page_config.slackWebHook;
         con["test"] = test_case_failure_collections;
         con["fileName"] = file_name
-        con["url"] = config.url_pointer
+        con["url"] = page_config.url_pointer
 
         if (test_case_failure_collections.length > 0) {
-            config.SlackNotification.sendFailureSlackNotification(con)
+            page_config.SlackNotification.sendFailureSlackNotification(con)
         } else {
-            config.SlackNotification.sendSuccessSlackNotification(con)
+            page_config.SlackNotification.sendSuccessSlackNotification(con)
         }
         done()
     }
