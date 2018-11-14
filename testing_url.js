@@ -1,5 +1,5 @@
-var page_config={
-    LIVE:require("./nightwatch").LIVE
+var page_config = {
+    LIVE: require("./nightwatch").LIVE
 }
 
 module.exports = {
@@ -26,4 +26,28 @@ module.exports = {
         },
 
     },
+
+    "CANONICAL": {
+        "product_page": {
+            "url": `${page_config.LIVE}p/pine-green-boyfriend-t-shirt-for-women?src=collection`,
+            "tag": "PRODUCT PAGE",
+            "CanonicalLink": "https://www.bewakoof.com/p/pine-green-boyfriend-t-shirt-for-women"
+        },
+        "category_page": {
+            "url": `${page_config.LIVE}women-new-arrivals-collection`,
+            "tag": "CATEGORY PAGE",
+            "CanonicalLink": "https://www.bewakoof.com/women-new-arrivals-collection"
+        },
+        "color_of_the_month": {
+            "url": `${page_config.LIVE}campaign/color-of-the-month`,
+            "tag": "COLOR OF THE MONTH",
+            "CanonicalLink": "https://www.bewakoof.com/campaign/color-of-the-month"
+        },
+        "home": {
+            "url": `${page_config.LIVE}`,
+            "tag": "BEWAKOOF HOME PAGE",
+            "CanonicalLink": "https://www.bewakoof.com"
+        },
+    },
+
 }
