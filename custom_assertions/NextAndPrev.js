@@ -26,7 +26,6 @@ NextAndPrev = function (expression) {
                         check = true;
                         this.verify.equal(expression, valueCan["attribs"]["rel"])
                     }
-
                 })
             }
             if (!check) {
