@@ -18,7 +18,7 @@ module.exports = {
         client.click(client.page.login().google_button, function (callback) {})
         client.waitForElementVisible(client.page.login().google_username, 1000)
         client.setValue(client.page.login().google_username, [page_config.google_1.user_name, client.Keys.ENTER])
-        client.waitForElementVisible(client.page.login().google_password, 1000)
+        client.waitForElementVisible(client.page.login().google_password, 10000)
         client.setValue(client.page.login().google_password, [page_config.google_1.password, client.Keys.ENTER])
         client.keys(client.keys.ENTER)
         client.pause(3000)

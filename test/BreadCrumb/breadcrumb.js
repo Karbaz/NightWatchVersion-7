@@ -3,24 +3,20 @@ var page_config = {
     SlackNotification: require("../../global_imports").SlackNotification,
     slackWebHook: require("../../nightwatch").SLACK,
     url_pointer: require("../../nightwatch").LIVE,
-    STRUCTURE_DATA: require("../../testing_url").STRUCTURE_DATA
+    BREADCRUMB: require("../../testing_url").BREADCRUMB
 }
 var file_name;
 
 let test_cases = {}
 
-Object.keys(page_config.STRUCTURE_DATA).map((value, index) => {
-    let test_case_details = page_config.STRUCTURE_DATA[value]
+Object.keys(page_config.BREADCRUMB).map((value, index) => {
+    let test_case_details = page_config.BREADCRUMB[value]
     let copy_test = Object.assign({
         [`${index} ${test_case_details.tag}`]: function (client) {
             client.url(test_case_details.url)
             client.waitForElementVisible("body", 1000)
             client.pause(2000)
-            client.source(function(callback){
-                test_case_details["check"].map((a,b)=>{
-                    client.assert.StructureData(a)
-                })
-            })
+            client.verify.BreadCrumb(test_case_details["nos_of_breadCrumb_tags"])
             client.end()
         },
         afterEach: function (browser, done) {

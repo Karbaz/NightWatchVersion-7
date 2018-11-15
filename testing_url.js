@@ -102,4 +102,18 @@ module.exports = {
     },
 
 
+    "BREADCRUMB": {
+        "category_page": {
+            "url": `${page_config.LIVE}cotm-collection`,
+            "tag": "CHECKING FOR BreadCrumb",
+            "nos_of_breadCrumb_tags": 2
+        },
+        "product_page": {
+            "url": `${page_config.LIVE}p/pine-green-plain-mens-t-shirt?src=collection`,
+            "tag": "CHECKING FOR BreadCrumb",
+            "nos_of_breadCrumb_tags": 5
+        }
+    },
+
+
 }
