@@ -3,31 +3,24 @@ var page_config = {
     SlackNotification: require("../../global_imports").SlackNotification,
     slackWebHook: require("../../nightwatch").SLACK,
     url_pointer: require("../../nightwatch").LIVE,
-    IMAGES_TITLE_ALT_TAG: require("../../testing_url").IMAGES_TITLE_ALT_TAG
+    STRUCTURE_DATA: require("../../testing_url").STRUCTURE_DATA
 }
 var file_name;
-var cheerio = require("cheerio")
 
 let test_cases = {}
 
-Object.keys(page_config.IMAGES_TITLE_ALT_TAG).map((value, index) => {
-    let test_case_details = page_config.IMAGES_TITLE_ALT_TAG[value]
+Object.keys(page_config.STRUCTURE_DATA).map((value, index) => {
+    let test_case_details = page_config.STRUCTURE_DATA[value]
     let copy_test = Object.assign({
         [`${index} ${test_case_details.tag}`]: function (client) {
             client.url(test_case_details.url)
             client.waitForElementVisible("body", 1000)
-            client.source(function (res) {
-                $ = cheerio.load(res.value)
-                var scripts = $("img")
-                scripts.map((index, val) => {
-                    if (val.name === "img") {
-                        this.verify.ok(val.attribs.title, `Title ${val.attribs.src}`)
-                        this.verify.ok(val.attribs.src, `Src ${val.attribs.src}`)
-                        this.verify.ok(val.attribs.alt, `Alt ${val.attribs.src}`)
-                    }
+            client.pause(2000)
+            client.source(function(callback){
+                test_case_details["check"].map((a,b)=>{
+                    client.assert.StructureData(a)
                 })
             })
-            client.end()
         },
         afterEach: function (browser, done) {
             if (browser.currentTest && browser.currentTest.results && browser.currentTest.results.testcases) {

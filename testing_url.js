@@ -73,5 +73,33 @@ module.exports = {
         },
     },
 
+    "STRUCTURE_DATA": {
+        "product_page": {
+            "url": `${page_config.LIVE}p/pine-green-boyfriend-t-shirt-for-women?src=collection`,
+            "check": ["BreadcrumbList", "Organization", "Product"],
+            "tag": "PRODUCT PAGE"
+        },
+        "category_page": {
+            "url": `${page_config.LIVE}women-new-arrivals-collection`,
+            "check": ["BreadcrumbList", "Organization"],
+            "tag": "CATEGORY PAGE"
+        },
+        "mobile_page": {
+            "url": `${page_config.LIVE}mobile-covers-india`,
+            "check": ["BreadcrumbList", "Organization"],
+            "tag": "MOBILE PAGE"
+        },
+        "mobile_brand_page": {
+            "url": `${page_config.LIVE}mobile-covers-india/apple-cases-back-covers`,
+            "check": ["BreadcrumbList", "Organization"],
+            "tag": "MOBILE BRAND PAGE"
+        },
+        "all_pages": {
+            "url": `${page_config.LIVE}`,
+            "check": ["Organization"],
+            "tag": "ALL PAGES"
+        },
+    },
+
 
 }
