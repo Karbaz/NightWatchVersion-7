@@ -3,7 +3,7 @@
     "enabled": true,
     "workers": 10
   },
-  "src_folders": ["test"],
+  "src_folders": ["tests"],
   "output_folder": "reports/XMLReports",
   "globals_path": "globals_path.js",
   "custom_commands_path": "",

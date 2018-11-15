@@ -7,6 +7,16 @@ var page_config = {
 }
 var file_name;
 
+
+//run view source as headless reader
+
+var nightwatch = require("../../nightwatch.json");
+if (nightwatch.test_settings && nightwatch.test_settings.chrome.desiredCapabilities && nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args) {
+    let convert_to_headless = nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args.toString().split(",");
+    convert_to_headless.push("--headless")
+    nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args = convert_to_headless;
+}
+
 let test_cases = {}
 
 Object.keys(page_config.STRUCTURE_DATA).map((value, index) => {
@@ -15,9 +25,8 @@ Object.keys(page_config.STRUCTURE_DATA).map((value, index) => {
         [`${index} ${test_case_details.tag}`]: function (client) {
             client.url(test_case_details.url)
             client.waitForElementVisible("body", 1000)
-            client.pause(2000)
-            client.source(function(callback){
-                test_case_details["check"].map((a,b)=>{
+            client.source(function (callback) {
+                test_case_details["check"].map((a, b) => {
                     client.assert.StructureData(a)
                 })
             })

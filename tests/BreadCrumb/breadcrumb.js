@@ -7,6 +7,15 @@ var page_config = {
 }
 var file_name;
 
+//run view source as headless reader
+
+var nightwatch = require("../../nightwatch.json");
+if(nightwatch.test_settings && nightwatch.test_settings.chrome.desiredCapabilities && nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args){
+    let convert_to_headless = nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args.toString().split(",");
+    convert_to_headless.push("--headless")
+    nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args = convert_to_headless;
+}
+
 let test_cases = {}
 
 Object.keys(page_config.BREADCRUMB).map((value, index) => {

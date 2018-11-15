@@ -3,21 +3,28 @@ var page_config = {
     SlackNotification: require("../../global_imports").SlackNotification,
     slackWebHook: require("../../nightwatch").SLACK,
     url_pointer: require("../../nightwatch").LIVE,
-    TAG_COUNTER: require("../../testing_url").TAG_COUNTER
+    CANONICAL: require("../../testing_url").CANONICAL
 }
 var file_name;
 
+//run view source as headless reader
+
+var nightwatch = require("../../nightwatch.json");
+if(nightwatch.test_settings && nightwatch.test_settings.chrome.desiredCapabilities && nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args){
+    let convert_to_headless = nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args.toString().split(",");
+    convert_to_headless.push("--headless")
+    nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args = convert_to_headless;
+}
+
 let test_cases = {}
 
-Object.keys(page_config.TAG_COUNTER).map((value, index) => {
-    let test_case_details = page_config.TAG_COUNTER[value]
+Object.keys(page_config.CANONICAL).map((value, index) => {
+    let test_case_details = page_config.CANONICAL[value]
     let copy_test = Object.assign({
         [`${index} ${test_case_details.tag}`]: function (client) {
             client.url(test_case_details.url)
             client.waitForElementVisible("body", 1000)
-            client.pause(2000)
-            client.verify.ElementCount("h1", 1)
-            client.verify.elementPresent("h1")
+            client.assert.CanonicalLink(test_case_details.CanonicalLink)
             client.end();
         },
         afterEach: function (browser, done) {
