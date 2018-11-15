@@ -23,7 +23,7 @@ module.exports = {
     },
 
     common_logout: function (client) {
-        return client.waitForElementVisible(client.page.login().profile_icon, 1000)
+        return client.waitForElementVisible(client.page.login().profile_icon, 10000)
             .pause(500)
             .moveToElement(client.page.login().profile_icon, 100, 100, function () {
                 client.waitForElementVisible(client.page.login().profile_icon, 500, function () {
