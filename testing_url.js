@@ -116,4 +116,23 @@ module.exports = {
     },
 
 
+    "NEXT_AND_PREV_LINK": {
+        "Link_1": {
+            "url": `${page_config.LIVE}women-new-arrivals-collection`,
+            "tag": "CHECKING FOR NEXT TAG",
+            "testCase": ["next"]
+        },
+        "Link_2": {
+            "url": `${page_config.LIVE}women-new-arrivals-collection/default/2`,
+            "tag": "CHECKING FOR NEXT TAG",
+            "testCase": ["prev", "next"]
+        },
+        "Link_3": {
+            "url": `${page_config.LIVE}women-new-arrivals-collection/default/3`,
+            "tag": "CHECKING FOR NEXT TAG",
+            "testCase": ["prev"]
+        }
+    },
+
+
 }
