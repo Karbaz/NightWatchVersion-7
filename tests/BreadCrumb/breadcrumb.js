@@ -24,7 +24,6 @@ Object.keys(page_config.BREADCRUMB).map((value, index) => {
         [`${index} ${test_case_details.tag}`]: function (client) {
             client.url(test_case_details.url)
             client.waitForElementVisible("body", 1000)
-            client.pause(2000)
             client.verify.BreadCrumb(test_case_details["nos_of_breadCrumb_tags"])
             client.end()
         },

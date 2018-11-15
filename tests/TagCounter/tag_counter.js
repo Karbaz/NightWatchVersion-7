@@ -24,7 +24,6 @@ Object.keys(page_config.TAG_COUNTER).map((value, index) => {
         [`${index} ${test_case_details.tag}`]: function (client) {
             client.url(test_case_details.url)
             client.waitForElementVisible("body", 1000)
-            client.pause(2000)
             client.verify.ElementCount("h1", 1)
             client.verify.elementPresent("h1")
             client.end();
