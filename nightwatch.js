@@ -26,6 +26,7 @@ var slackConfig = {
 
 
 
+//default ( url and slack) config
 module.exports.LIVE = "https://localhost:4000/"
 module.exports.SLACK = slackConfig["A"];
 
