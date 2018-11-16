@@ -134,5 +134,10 @@ module.exports = {
         }
     },
 
+    "PRODUCT_PAGE": {
+        1: {
+            "url": `${page_config.LIVE}p/white-plain-mens-round-neck-t-shirt?src=collection`,
+        }
+    }
 
 }
