@@ -1,4 +1,4 @@
-require("nightwatch/bin/runner")
+require("./node_modules/nightwatch/bin/runner")
 var pageConfig = {
     getApiUrlFromTerminal: require("./globals_path").getApiUrlFromTerminal
 }
