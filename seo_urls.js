@@ -1,5 +1,5 @@
 var page_config = {
-    LIVE: require("../nightwatch").LIVE
+    LIVE: require("./nightwatch").LIVE
 }
 
 module.exports = {

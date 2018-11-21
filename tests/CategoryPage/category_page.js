@@ -3,26 +3,16 @@ var page_config = {
     SlackNotification: require("../../global_imports").SlackNotification,
     slackWebHook: require("../../nightwatch").SLACK,
     url_pointer: require("../../nightwatch").LIVE,
-    SEO: require("../../seo_urls").SEO,
+    CATEGORY: require("../../category_urls").CATEGORY,
     seoSearchTextLogic: require("../../helper").seoSearchTextLogic
 }
 var file_name;
-
-//run view source as headless reader
-
-var nightwatch = require("../../nightwatch.json");
-if (nightwatch.test_settings && nightwatch.test_settings.chrome.desiredCapabilities && nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args) {
-    let convert_to_headless = nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args.toString().split(",");
-    convert_to_headless.push("--headless")
-    nightwatch.test_settings.chrome.desiredCapabilities.chromeOptions.args = convert_to_headless;
-}
-
 var cheerio = require("cheerio")
 
 let test_cases = {}
 
-Object.keys(page_config.SEO.Collections).map((value, index) => {
-    let test_case_details = page_config.SEO.Collections[value]
+Object.keys(page_config.CATEGORY.Collections).map((value, index) => {
+    let test_case_details = page_config.CATEGORY.Collections[value]
     var splitUrl = test_case_details.url.split("/")[test_case_details.url.split("/").length - 1];
     var breakLogic = splitUrl.split("-")
 
@@ -30,6 +20,7 @@ Object.keys(page_config.SEO.Collections).map((value, index) => {
         [`${index} ${test_case_details.tag}`]: function (client) {
             client.url(test_case_details.url)
             client.waitForElementVisible("body", 1000)
+            client.pause(5000)
             client.getAttribute("meta[property='og:title']", "content", function (response) {
                 if (!response.value) {
                     this.verify.ok(false, "Title With EmptyString")
@@ -61,6 +52,8 @@ Object.keys(page_config.SEO.Collections).map((value, index) => {
                     })
                 }
             })
+            
+
             client.end()
         },
         afterEach: function (browser, done) {
