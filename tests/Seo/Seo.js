@@ -35,7 +35,13 @@ Object.keys(page_config.SEO.Collections).map((value, index) => {
                     this.verify.ok(false, "Title With EmptyString")
                 } else {
                     this.verify.ok(true, "Title Present")
-                    this.verify.ok(response.value.length > 40 ? true : false, "Title Grater Than 40 char")
+                    if (response.value.length > 40) {
+                        this.verify.ok(true, "Title Grater Than 40 char length")
+                    } else {
+                        if (response.value.length < 40) {
+                            this.verify.ok(false, "Title Less Than 40 char length")
+                        }
+                    }
                     page_config.seoSearchTextLogic(client, response.value, breakLogic, function (error, logicResponse) {
                         if (logicResponse.checkCounter > 0) {
                             client.verify.ok(true, "Urls Keys words match in meta title  " + test_case_details.url)
@@ -51,7 +57,13 @@ Object.keys(page_config.SEO.Collections).map((value, index) => {
                     this.verify.ok(false, "Description With Empty String")
                 } else {
                     this.verify.ok(true, "Description Present")
-                    this.verify.ok(response.value.length > 140 ? true : false, "Description Grater Than 40 char")
+                    if (response.value.length > 140) {
+                        this.verify.ok(true, "Description Grater Than 140 char length")
+                    } else {
+                        if (response.value.length < 140) {
+                            this.verify.ok(false, "Description Less Than 140 char length")
+                        }
+                    }
                     page_config.seoSearchTextLogic(client, response.value, breakLogic, function (error, logicResponse) {
                         if (logicResponse.checkCounter > 0) {
                             client.verify.ok(true, "Urls Keys words match in meta title " + test_case_details.url)
