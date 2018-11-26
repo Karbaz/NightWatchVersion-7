@@ -5,8 +5,7 @@ var page_config = {
 module.exports = {
     "CATEGORY": {
         "Collections": [{
-                url: `${page_config.LIVE}women-joggers-sweatpants`
-            },
-        ]
+            url: `${page_config.LIVE}women-joggers-sweatpants`
+        }]
     },
 }
